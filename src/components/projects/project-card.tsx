@@ -9,6 +9,7 @@ import { GithubIcon } from "@/components/icons";
 export interface ProjectCardProps {
   name: string;
   favicon: string;
+  featured?: boolean;
   imageUrl: string[];
   description: string;
   sourceCodeHref: string;
@@ -45,7 +46,7 @@ export default function ProjectCard(props: ProjectCardProps) {
           >
             <GithubIcon className="h-5 w-5" /> Source code
           </a>
-          {props.liveWebsiteHref && (
+          {props.liveWebsiteHref ? (
             <a
               href={props.liveWebsiteHref}
               target="_blank"
@@ -53,6 +54,8 @@ export default function ProjectCard(props: ProjectCardProps) {
             >
               <FiExternalLink className="h-5 w-5" /> Live
             </a>
+          ) : (
+            <>Upcoming</>
           )}
         </div>
       </div>

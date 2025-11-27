@@ -55,6 +55,26 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
 
 export const PROJECTS_CARD: ProjectCardProps[] = [
   {
+    name: "EMI Predict AI",
+    favicon: "",
+    imageUrl: ["/images/projects/emipredict/dark.jpg"],
+    featured: true,
+    description:
+      "Financial Risk Assessment & EMI Prediction Platform. This project builds a financial risk assessment platform that integrates machine learning models with MLflow experiment tracking to create an interactive Streamlit web application for EMI prediction.",
+    sourceCodeHref: "https://github.com/mechanicm56/emipredict_ai",
+    liveWebsiteHref: "",
+  },
+  {
+    name: "PhonePe Visualization",
+    favicon: "",
+    imageUrl: ["/images/projects/phonepe/dark.jpg"],
+    featured: true,
+    description:
+      "The Phonepe Transaction and User Data Visualization project is a Python-based solution that extracts data from the Phonepe Pulse Github repository, transforms and stores it in a MySQL database, and displays it through an interactive dashboard using Streamlit.",
+    sourceCodeHref: "https://github.com/mechanicm56/phonpe-pulse-visualization",
+    liveWebsiteHref: "https://pulse-phonepe.streamlit.app/",
+  },
+  {
     name: "Kanban app",
     favicon: "/images/projects/logos/kanban.ico",
     imageUrl: [
