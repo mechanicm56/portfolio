@@ -42,19 +42,20 @@ export default function LandingHero() {
                 Pranav Sharma
               </h1>
               <span className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 md:text-3xl">
-                Full Stack Engineer
+                Full Stack & AI / ML Engineer
               </span>
             </FadeUp>
             <FadeUp key="description" duration={0.6} delay={0.2}>
               <div className="mt-8 max-w-3xl text-base font-semibold text-zinc-900 dark:text-zinc-200 sm:text-base md:text-xl">
-                I am a Full Stack Engineer specializing in building
-                high-performance, user-focused web applications. Skilled in{" "}
+                I am a Full Stack & AI Engineer specializing in building
+                high-performance, user-focused applications. Skilled in{" "}
                 <span className="font-semibold text-accent">MERN</span>,{" "}
                 <span className="font-semibold text-accent">NextJS</span>,{" "}
                 <span className="font-semibold text-accent">SolidJS</span>,{" "}
                 <span className="font-semibold text-accent">React Native</span>,{" "}
                 <span className="font-semibold text-accent">Flutter</span>, and
                 expert in{" "}
+                <span className="font-semibold text-accent">Python</span>,{" "}
                 <span className="font-semibold text-accent">JavaScript</span>,{" "}
                 <span className="font-semibold text-accent">HTML</span> and{" "}
                 <span className="font-semibold text-accent">CSS</span>

@@ -20,6 +20,11 @@ import JavascriptSvg from "@/public/icons/javascript.svg";
 import TypescriptSvg from "@/public/icons/typescript.svg";
 import PythonSvg from "@/public/icons/python.svg";
 
+// AI / ML
+import StreamlitSvg from "@/public/icons/streamlit.svg";
+import TensorflowSvg from "@/public/icons/tensorflow.svg";
+import PowerbiSvg from "@/public/icons/powerbi.svg";
+
 // Libraries
 import ReactjsSvg from "@/public/icons/reactjs.svg";
 import SolidjsSvg from "@/public/icons/solidjs.svg";
@@ -30,6 +35,7 @@ import ViteSvg from "@/public/icons/vite.svg";
 
 // Backend
 import NodejsSvg from "@/public/icons/nodejs.svg";
+import GraphQL from "@/public/icons/graphql.svg";
 
 // Database and ORMS
 import MongoDBSvg from "@/public/icons/mongodb.svg";
@@ -68,6 +74,23 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
       {
         name: "Python",
         icon: PythonSvg,
+      },
+    ],
+  },
+  {
+    sectionName: "Data Science",
+    skills: [
+      {
+        name: "Streamlit",
+        icon: StreamlitSvg,
+      },
+      {
+        name: "Tensorflow",
+        icon: TensorflowSvg,
+      },
+      {
+        name: "PowerBI",
+        icon: PowerbiSvg,
       },
     ],
   },
@@ -134,6 +157,10 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
       {
         name: "Flask",
         icon: SiFlask,
+      },
+      {
+        name: "Graph QL",
+        icon: GraphQL,
       },
     ],
   },
