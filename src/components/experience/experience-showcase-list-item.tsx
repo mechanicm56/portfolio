@@ -45,7 +45,7 @@ export interface ExperienceShowcaseListItemProps {
   };
   date: string;
   location: string;
-  description: string;
+  description: string[];
 }
 
 export default function ExperienceShowcaseListItem(
@@ -77,9 +77,18 @@ export default function ExperienceShowcaseListItem(
         <span className="text-sm font-medium text-foreground xs:text-base">
           {props.date} | {props.location}
         </span>
-        <p className="text-sm font-medium text-muted-foreground xs:text-base">
-          {props.description}
-        </p>
+
+        {typeof props.description == "string" ? (
+          <p className="text-sm font-medium text-muted-foreground xs:text-base">
+            props.description
+          </p>
+        ) : (
+          <ul>
+            {props.description?.map((ds, indx) => (
+              <li key={`${indx}-${ds}`}>- {ds}</li>
+            ))}
+          </ul>
+        )}
       </motion.div>
     </li>
   );
