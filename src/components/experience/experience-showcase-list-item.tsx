@@ -80,7 +80,7 @@ export default function ExperienceShowcaseListItem(
 
         {typeof props.description == "string" ? (
           <p className="text-sm font-medium text-muted-foreground xs:text-base">
-            props.description
+            {props.description}
           </p>
         ) : (
           <ul>
