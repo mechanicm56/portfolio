@@ -14,6 +14,7 @@ export interface ProjectCardProps {
   description: string;
   sourceCodeHref: string;
   liveWebsiteHref?: string;
+  tag?: string[];
 }
 
 export default function ProjectCard(props: ProjectCardProps) {
@@ -37,6 +38,10 @@ export default function ProjectCard(props: ProjectCardProps) {
         </div>
         <div className="mt-3">
           <p className="text-xs md:text-sm">{props.description}</p>
+        </div>
+        <br />
+        <div className="text-accent">
+          {props.tag?.map((t) => "#" + t + " ")}
         </div>
         <div className="mt-6 flex items-center justify-end gap-6">
           <a

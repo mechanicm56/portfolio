@@ -55,6 +55,27 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
 
 export const PROJECTS_CARD: ProjectCardProps[] = [
   {
+    name: "Aerial Object Detection – Bird vs Drone",
+    favicon: "",
+    imageUrl: ["/images/projects/aerialObjectDetection/dark.jpg"],
+    featured: true,
+    description:
+      "This project focuses on building a Deep Learning–based system capable of classifying aerial images into two categories: Bird & Drone",
+    sourceCodeHref:
+      "https://github.com/mechanicm56/Aerial-Object-Detection-Bird-vs-Drone",
+    liveWebsiteHref: "https://bird-vs-drone.streamlit.app/",
+    tag: [
+      "Python",
+      "JupyterNotebook",
+      "CNN",
+      "PyTorch",
+      "Tensoflow:keras",
+      "Streamlit",
+      "StreamlitCloud",
+      "Yolo11",
+    ],
+  },
+  {
     name: "EMI Predict AI",
     favicon: "",
     imageUrl: ["/images/projects/emipredict/dark.jpg"],
