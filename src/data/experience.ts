@@ -9,8 +9,19 @@ export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
     },
     date: "Nov, 2021 - Nov, 2022",
     location: "Remote",
-    description:
-      "Worked on a team responsible for developing new features and updating old codebases to latest technologies. Learned alot about web development and CI/CD development cycle.",
+    description: [
+      "Contributed to the development and maintenance of a core internal SaaS platform supporting company-wide operational workflows, used daily by cross-functional teams.",
+
+      "Modernized legacy frontend by migrating UI components to Material UI, improving usability consistency and reducing UI-related bugs by an estimated 25–30%.",
+
+      "Improved accuracy and reliability of business logic and operational algorithms, leading to more consistent system outputs and reduced manual corrections.",
+
+      "Designed and integrated RESTful APIs to support frontend features and internal tools, improving data flow between services.",
+
+      "Managed server deployments and environment configurations, contributing to smoother releases and reduced downtime during updates.",
+
+      "Actively reviewed code and mentored junior team members, helping improve code readability, maintainability, and adherence to best practices.",
+    ],
   },
   // {
   //   title: "AI / ML Intern",
