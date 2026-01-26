@@ -6,7 +6,7 @@ export const siteMetadata = {
   language: "en-us",
   theme: "light",
   siteName: "pranavsharma.dev",
-  siteUrl: "https://pranavsharma.dev",
+  siteUrl: "",
   siteRepo: "",
   siteLogo: "/favicon.ico",
   image: "/static/homepage.png",
@@ -15,7 +15,7 @@ export const siteMetadata = {
   email: "1997pranavsharma@gmail.com",
   github: "https://github.com/mechanicm56",
   twitter: "",
-  linkedin: "",
+  linkedin: "https://www.linkedin.com/in/pranav-sharma-340a8018b/",
   locale: "en-US",
   googleSiteVerification: "",
 };
