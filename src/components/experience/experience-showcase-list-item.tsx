@@ -46,6 +46,7 @@ export interface ExperienceShowcaseListItemProps {
   date: string;
   location: string;
   description: string | string[];
+  certificate?: string;
 }
 
 export default function ExperienceShowcaseListItem(
@@ -53,7 +54,7 @@ export default function ExperienceShowcaseListItem(
 ) {
   const ref = useRef(null);
   return (
-    <li ref={ref} className="mx-auto mb-14 flex w-[60%] flex-col gap-1">
+    <li ref={ref} className="mx-auto mb-14 flex w-[80%] flex-col gap-1">
       <ShowCaseLiIcon iconRef={ref} />
       <motion.div
         initial={{ y: 50 }}
@@ -75,17 +76,27 @@ export default function ExperienceShowcaseListItem(
           </Link>
         </h3>
         <span className="text-sm font-medium text-foreground xs:text-base">
-          {props.date} | {props.location}
+          {props.date} | {props.location}{" "}
+          {props.certificate && (
+            <span>
+              |{" "}
+              <a className="text-blue-500" href={props.certificate}>
+                Certificate
+              </a>
+            </span>
+          )}
         </span>
 
-        {typeof props.description == "string" ? (
+        {typeof props.description === "string" ? (
           <p className="text-sm font-medium text-muted-foreground xs:text-base">
             {props.description}
           </p>
         ) : (
-          <ul>
+          <ul className="dark:text-gray-300">
             {props.description?.map((ds, indx) => (
-              <li key={`${indx}-${ds}`}>- {ds}</li>
+              <li key={`${indx}-${ds}`}>
+                &#8226; <span dangerouslySetInnerHTML={{ __html: ds }}></span>
+              </li>
             ))}
           </ul>
         )}

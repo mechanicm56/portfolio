@@ -55,6 +55,17 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
 
 export const PROJECTS_CARD: ProjectCardProps[] = [
   {
+    name: "Shopper Spectrum: Customer Segmentation and Product Recommendations in E-Commerce",
+    favicon: "",
+    imageUrl: ["/images/projects/shopperSpectrum/dark.jpg"],
+    featured: true,
+    description:
+      "Shopper Spectrum is an end-to-end E-Commerce Analytics project that focuses on: Customer segmentation using RFM analysis and KMeans clustering, Product recommendation using Item-based Collaborative Filtering",
+    sourceCodeHref: "https://github.com/mechanicm56/shopper-spectrum",
+    liveWebsiteHref: "https://shopper-spectrum-ecom.streamlit.app/",
+    tag: ["Python", "JupyterNotebook", "Streamlit", "StreamlitCloud"],
+  },
+  {
     name: "Aerial Object Detection – Bird vs Drone",
     favicon: "",
     imageUrl: ["/images/projects/aerialObjectDetection/dark.jpg"],

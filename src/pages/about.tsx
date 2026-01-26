@@ -7,6 +7,49 @@ import { EDUCATION } from "@/data/education";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 
 export default function About() {
+  const getMonthNunber = (month: string) => {
+    switch (month) {
+      case "Jan":
+        return 1;
+      case "Feb":
+        return 2;
+      case "March":
+        return 3;
+      case "April":
+        return 4;
+      case "May":
+        return 5;
+      case "June":
+        return 6;
+      case "July":
+        return 7;
+      case "Aug":
+        return 8;
+      case "Sep":
+        return 9;
+      case "Oct":
+        return 10;
+      case "Nov":
+        return 11;
+      case "Dec":
+        return 12;
+      default:
+        return 0;
+    }
+  };
+  const getExperienceInYear = () => {
+    const [sm, sY] = EXPERIENCE[EXPERIENCE.length - 1].date
+      .split("-")[1]
+      .split(",");
+    const [em, eY] = EXPERIENCE[0].date.split("-")[0].split(",");
+    return (
+      ((Number(eY) - Number(sY)) * 12 +
+        getMonthNunber(em) +
+        12 -
+        getMonthNunber(sm)) /
+      12
+    ).toFixed(1);
+  };
   return (
     <>
       <NextSeo
@@ -39,7 +82,10 @@ export default function About() {
         ]}
       />
       <AboutHero />
-      <ExperienceShowcaseList title="Experience" details={EXPERIENCE} />
+      <ExperienceShowcaseList
+        title={`Experience ( ${getExperienceInYear() + " Year"} )`}
+        details={EXPERIENCE}
+      />
       <ExperienceShowcaseList title="Education" details={EDUCATION} />
     </>
   );
