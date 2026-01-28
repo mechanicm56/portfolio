@@ -47,8 +47,7 @@ export default function About() {
         getMonthNunber(em) +
         12 -
         getMonthNunber(sm)) /
-        12 -
-      1
+      12
     ).toFixed(1);
   };
   return (
