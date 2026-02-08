@@ -54,7 +54,7 @@ export default function About() {
     <>
       <NextSeo
         title="About Pranav Sharma | Full Stack Engineer"
-        description="Learn more about Pranav Sharma, a dedicated Full Stack Engineer with 2 years of experience. Discover the journey, skills, and passion that drive me to create innovative and user-friendly web solutions."
+        description="Learn more about Pranav Sharma, a dedicated Full Stack Engineer with 2+ years of experience. Discover the journey, skills, and passion that drive me to create innovative and user-friendly web solutions."
         canonical={`${siteMetadata.siteUrl}/about`}
         openGraph={{
           url: `${siteMetadata.siteUrl}/about`,
