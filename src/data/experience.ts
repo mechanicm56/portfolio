@@ -41,7 +41,7 @@ export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
       name: "Freelance / Independent Projects",
       href: "",
     },
-    date: "Jan, 2023 - Sep, 2025",
+    date: "Jan, 2023 - Feb, 2026",
     location: "Remote",
     description: [
       "Completed client-based and personal projects in Web, App, & Design.",
@@ -49,19 +49,19 @@ export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
       "Delivered solutions based on client requirements",
     ],
   },
-  {
-    title: "AI / ML Data Science, Intern",
-    organisation: {
-      name: "Labmentix, Bengaluru",
-      href: "https://labmentix.in/",
-    },
-    date: "Oct, 2025 - March, 2026",
-    location: "Remote (Unpaid)",
-    description: [
-      "Work with Data extraction from csv, json, sql database.",
-      "Visualize Data using seaborn library Computer Vision, Augmentation, YOLOv8",
-      "ML models from sklearn with MLflow integration",
-      "Dashboard & Reports deploy with Streamlit App",
-    ],
-  },
+  // {
+  //   title: "AI / ML Data Science, Intern",
+  //   organisation: {
+  //     name: "Labmentix, Bengaluru",
+  //     href: "https://labmentix.in/",
+  //   },
+  //   date: "Oct, 2025 - March, 2026",
+  //   location: "Remote (Unpaid)",
+  //   description: [
+  //     "Work with Data extraction from csv, json, sql database.",
+  //     "Visualize Data using seaborn library Computer Vision, Augmentation, YOLOv8",
+  //     "ML models from sklearn with MLflow integration",
+  //     "Dashboard & Reports deploy with Streamlit App",
+  //   ],
+  // },
 ].reverse();
